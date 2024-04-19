@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10秒ストップチャレンジ</title>
+    <link rel="stylesheet" href="css/style.css"> 
+  </head>
+
+  <body>
+    <h1>10秒ストップチャレンジ</h1>
+
+    <div class="box">
+      <p>あなたがストップした時間は...</p>
+
+      <div class="btn">
+        <button class="start">START</button>
+        <button class="stop" disabled>STOP</button>
+      </div>
+
+      <div class="rule">
+        <h2>ルール</h2>
+        <p>STARTボタンを押すとカウントが始まるよ！</p>
+        <p>10秒たったと思ったらSTOPボタンを押してね！</p>
+        <p>STOPボタンを押すと結果が表示されるよ！</p>
+        <p>※結果表示後の<span>閉じる</span>を押すとリセットされます。</p>
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <div class="modalContents">
+        <h3 class="title success"></h3>
+        <p class="sec"></p>
+        <p class="comment"></p>
+        <button class="close">閉じる</button>
+      </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
