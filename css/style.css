@@ -1,0 +1,148 @@
+@charset "UTF-8";
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1;
+  font-family: sans-serif;
+  font-size: 16px
+}
+
+h1{
+  text-align: center;
+  padding: 40px;
+}
+
+.box{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.box > p{
+  font-size: 1.3em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.sec{
+  text-align: center;
+  font-size: 5em;
+  padding-bottom: 16px;
+}
+
+.btn{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.box button{
+  display: block;
+  color: #fff;
+  font-size: 2em;
+  width: 280px;
+  line-height: 280px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #f60;
+  transition: .5s;
+}
+
+.box button:hover{
+  background-color: #f93;
+}
+
+.box button:disabled{
+  cursor: default;
+  background-color: #c30;
+}
+
+.box button:active{
+  background-color: #c30;
+}
+
+.rule h2{
+  padding-bottom: 10px;
+}
+
+.rule p + p{
+  padding-top: 5px;
+}
+
+.rule p:last-of-type{
+  font-size: 14px;
+}
+
+.rule p:last-of-type span{
+  color: #c30;
+  font-weight: bold;
+}
+
+.modal{
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalContents{
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title{
+  padding-bottom: 20px;
+}
+
+.success span{
+  display: block;
+  font-family: serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2em;
+  padding-bottom: 5px;
+}
+
+.modalContents p{
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.close{
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  padding: 5px 0;
+  transition: .5s;
+}
+
+.close:hover{
+  color: #fff;
+  background-color: rgb(153, 152, 152);
+}
+
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
